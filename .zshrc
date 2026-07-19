@@ -121,3 +121,7 @@ zle-line-init() {
   echo -ne '\e[5 q'
 }
 zle -N zle-line-init
+
+eval "$(starship init zsh)"
+
+source .fzf.zsh
